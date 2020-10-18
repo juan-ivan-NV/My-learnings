@@ -1,0 +1,25 @@
+function sumin(n) {
+    // your code
+    var x = 0;
+    var y = 0;
+    var sum1 = 0;
+    for (paso = 0; paso <= n; paso++) {
+      x += paso 
+      y += paso 
+      sum1 += (x+y) - n/2
+}
+return sum1;
+}
+function sumax(n) {
+    // your code
+    var sum2 = 0;
+    for (paso = 0; paso <= n; paso++) { 
+      sum2 += paso*(paso*2-1)
+}
+return sum2 ;
+}
+function sumsum(n) {
+    // your code
+    return sumin(n)+sumax(n)
+    
+}
