@@ -1,0 +1,14 @@
+function multiples(m, n){
+  var paso;
+  var arr = [];
+  if (n!= (-1)){
+    for (paso = n; paso <= (n*m); paso+=n) {
+  
+  arr.push(paso);
+}
+return arr
+}
+else{
+return [-1,-2,-3,-4,-5]
+}
+}
