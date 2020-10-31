@@ -1,0 +1,15 @@
+function towerBuilder(nFloors) {
+    // build here
+    a = []
+    var i;
+    var n = 1 
+    for (i = 1; i <= nFloors; i++){
+    var s = (" ").repeat(nFloors - i);
+    var as = "*".repeat(n);
+    n+=2;
+    var res = s.concat(as,s);
+    a.push(res);
+    
+    }
+    return a
+  }
