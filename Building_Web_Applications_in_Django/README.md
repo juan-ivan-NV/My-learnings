@@ -26,6 +26,7 @@ The migrate command reads all the migrations folders in the application folders 
 
 git clone https://github.com/csev/dj4e-samples.git
 cd dj4e-samples
+workon django3 ► to activate the enviroment
 pip3 install --user -r requirements.txt
 python3 manage.py check
 python3 manage.py makemigrations
@@ -50,3 +51,23 @@ python3 manage.py shell
     User.objects.values() 
     User.objects.filter(email='cvl@umich.edu').values()
     quit() 
+
+Default db in Django: sqlite3
+
+File contains the list of INSTALLED_APPS in a Django project: settings.py
+
+Command "python manage.py migrate": Builds/updates the database structure for the project.
+
+Purpose of the models.py file:To define the shape of the data objects to be stored in a database.
+
+Option "sqlmigrate": It lets you see the SQL that will run to effect a migration.
+
+__str__ method in a Django model: It lets you specify how an instance of the model will be represented as a string.
+
+Difference between the Django shell and a normal interactive Python shell: The Django shell loads all of the project objects before starting.
+
+Django command to create a user/password for the admin user interface: createsuperuser.
+
+Edit the admin.py file in a Django aplication to make sure a model appears in the admin interface.
+
+- 
