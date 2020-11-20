@@ -70,4 +70,7 @@ Django command to create a user/password for the admin user interface: createsup
 
 Edit the admin.py file in a Django aplication to make sure a model appears in the admin interface.
 
-- 
+- Task 2:
+https://docs.djangoproject.com/en/3.0/intro/tutorial02/
+
+Advices, do not run this tutorial on pythonanywhere because there are issues to open the port http://127.0.0.1:8080/ or http://127.0.0.1:8000/ if you don't have a paid account. 
