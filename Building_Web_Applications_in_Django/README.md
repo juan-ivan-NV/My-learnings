@@ -3,6 +3,11 @@
 From edx:
 https://courses.edx.org/courses/course-v1:MichiganX+dj4e102x+3T2020/course/
 
+Model: Data-Base
+View (Controller): Manage conections betwen model and template.
+Template (View): The information that the user can watch. 
+
+
 ------------------------------------------------------------------------------
 ## About the course
 
