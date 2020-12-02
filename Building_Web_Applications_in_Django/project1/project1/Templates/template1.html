@@ -1,8 +1,20 @@
 <html>
     <body>
+
+        {% include "navbar.html"%}
         <h2 style = "color: red">
             Watching first template
         </h2>
+
+        <!--this is a 
+            comment baby-->
+
+        {% if people_name == "Roberto" %}
+
+        <p>First class by: </p>
+
+        {% endif %}
+ 
         <p>The profesor name is: {{people_name.upper}} {{last_name.upper}}</p>
         <p>You're looking at this page now: {{current_time.day}} / {{current_time.month}} / {{current_time.year}}</p>
         <p><strong>Numbers:</strong></p>
@@ -11,7 +23,7 @@
             {% if numbers %}
                 {% for i in numbers %}
 
-                    <li>{{i}}</li>
+                    <li>{{i|first|lower}}</li>
 
                 {% endfor %}
             {% else %}

@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 import datetime
 from django.template import Template, Context
+from django.template.loader import get_template
+from django.shortcuts import render
 
 
 class bloke(object):
@@ -12,27 +14,31 @@ class bloke(object):
 
 def welcome(request):  # first view
 
-    p1 = bloke("Roberto","Dias")
+    p1 = bloke("Robertosky","Dias")
     
     numbers = ["zero","one","two","three","four"]
-    
+
     #name = "Juan"
 
     #last_name = "Diaz"
 
     now = datetime.datetime.now()
 
-    external_doc = open("project1/Templates/template1.html")
+    #external_doc = open("project1/Templates/template1.html")
 
-    plt = Template(external_doc.read())
+    #plt = Template(external_doc.read())
     
-    external_doc.close()
+    #external_doc.close()
     
-    ctx = Context({"people_name":p1.name, "last_name":p1.last_name, "current_time":now, "numbers":numbers})
+    #external_doc = get_template('template1.html')
 
-    doc = plt.render(ctx)
+    #ctx = Context({"people_name":p1.name, "last_name":p1.last_name, "current_time":now, "numbers":numbers})
 
-    return HttpResponse(doc)
+    #doc = external_doc.render({"people_name":p1.name, "last_name":p1.last_name, "current_time":now, "numbers":numbers})
+
+    #return HttpResponse(doc)
+
+    return render(request, "template1.html", {"people_name":p1.name, "last_name":p1.last_name, "current_time":now, "numbers":numbers})
 
 def bye(request):
 
