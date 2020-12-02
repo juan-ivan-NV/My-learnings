@@ -1,7 +1,23 @@
 <html>
     <body>
-        <h1>
+        <h2 style = "color: red">
             Watching first template
-        </h1>
+        </h2>
+        <p>The profesor name is: {{people_name.upper}} {{last_name.upper}}</p>
+        <p>You're looking at this page now: {{current_time.day}} / {{current_time.month}} / {{current_time.year}}</p>
+        <p><strong>Numbers:</strong></p>
+        <p>
+            <ul>    
+            {% if numbers %}
+                {% for i in numbers %}
+
+                    <li>{{i}}</li>
+
+                {% endfor %}
+            {% else %}
+                <p>Empty list</p>
+            {% endif %}
+            </ul>
+        </p>
     </body>
 </html>

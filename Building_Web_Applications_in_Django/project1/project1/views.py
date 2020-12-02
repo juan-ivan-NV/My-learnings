@@ -2,7 +2,25 @@ from django.http import HttpResponse
 import datetime
 from django.template import Template, Context
 
+
+class bloke(object):
+
+    def __init__(self, name, last_name):
+
+        self.name = name
+        self.last_name = last_name
+
 def welcome(request):  # first view
+
+    p1 = bloke("Roberto","Dias")
+    
+    numbers = ["zero","one","two","three","four"]
+    
+    #name = "Juan"
+
+    #last_name = "Diaz"
+
+    now = datetime.datetime.now()
 
     external_doc = open("project1/Templates/template1.html")
 
@@ -10,7 +28,7 @@ def welcome(request):  # first view
     
     external_doc.close()
     
-    ctx = Context()
+    ctx = Context({"people_name":p1.name, "last_name":p1.last_name, "current_time":now, "numbers":numbers})
 
     doc = plt.render(ctx)
 
