@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>
+            {% block title %} {% endblock %}
+        </title>
+    </head>
+    <body>
+        <h1 style="background-color: seashell; text-align: center;">Main Title </h1>
+        {% include "navbar.html"%}
+        <h3 style="text-align: center;">Main title text</h3>
+
+        {% block content %} 
+        
+        {% endblock %}
+
+        <p style="background-color: seashell; text-align: right;"> Main footer </p>
+    </body>
+</html>

@@ -40,6 +40,18 @@ def welcome(request):  # first view
 
     return render(request, "template1.html", {"people_name":p1.name, "last_name":p1.last_name, "current_time":now, "numbers":numbers})
 
+def title1(request):
+
+    current_date = datetime.datetime.now()
+
+    return render(request, "title1.html", {"Time":current_date})
+
+def title2(request):
+
+    current_date = datetime.datetime.now()
+
+    return render(request, "title2.html", {"Time":current_date})
+
 def bye(request):
 
     return HttpResponse("Bye baby")
