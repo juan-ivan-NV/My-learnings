@@ -12,6 +12,9 @@ class items(models.Model):
     name = models.CharField(max_length=30)
     section = models.CharField(max_length=20)
     price = models.IntegerField()
+    
+    def __str__(self):
+        return 'Name %s section %s price %s' %(self.name, self.section, self.price)
 
 class sales(models.Model):
     number = models.IntegerField()
