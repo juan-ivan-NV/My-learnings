@@ -5,7 +5,7 @@ from django.db import models
 class clients(models.Model):
     name = models.CharField(max_length=30)
     direction = models.CharField(max_length=50)
-    email=models.EmailField()
+    email=models.EmailField(blank=True, null=True)
     phone = models.CharField(max_length=7)
 
 class items(models.Model):
