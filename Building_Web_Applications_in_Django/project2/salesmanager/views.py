@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from salesmanager.models import items
 from django.core.mail import send_mail
 from django.conf import settings
+from salesmanager.forms import ContactForm
 
 # Create your views here.
 
@@ -37,6 +38,36 @@ def customer(request):
 
     if request.method =="POST":
 
+        myForm = ContactForm(request.POST)
+
+        if myForm.is_valid():
+            
+            infForm=myForm.cleaned_data
+
+            send_mail(infForm['context'], infForm['message'], infForm.get('email',''), ['coldcram14@hotmail.com'],)
+
+            return render(request, 'thanks.html')
+
+    else: 
+
+        myForm = ContactForm()
+
+    return render(request, 'contact_form.html', {'Form': myForm})
+
+
+
+
+
+
+
+
+
+
+
+"""def customer(request):
+
+    if request.method =="POST":
+
         subject = request.POST["context"]
 
         message = request.POST["message"] + " " + request.POST["email"]
@@ -49,4 +80,4 @@ def customer(request):
 
         return render(request, "thanks.html")
 
-    return render(request, "customer.html")
+    return render(request, "customer.html")""" # All this lines works before forms
