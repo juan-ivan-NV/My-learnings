@@ -52,14 +52,7 @@ def customer(request):
 
         myForm = ContactForm()
 
-    return render(request, 'contact_form.html', {'Form': myForm})
-
-
-
-
-
-
-
+    return render(request, 'contact_form.html', {'form': myForm})
 
 
 
