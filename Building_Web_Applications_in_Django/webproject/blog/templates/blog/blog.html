@@ -34,7 +34,7 @@
     
     {% for post in posts %}
         {% for category in post.categories.all %}
-            {{category.name}} &nbsp;&nbsp;&nbsp;  <!-- &nbsp means space -->
+        <a href="{% url 'category' category.id %}" class="linksCategories">{{category.name}} </a> &nbsp;&nbsp;&nbsp;  <!-- &nbsp means space -->
         {% endfor %}
     {% endfor %}
 

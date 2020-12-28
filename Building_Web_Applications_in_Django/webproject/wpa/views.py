@@ -11,10 +11,8 @@ def store(request):
 
     return render(request,"wpa/store.html")
 
-def blog(request):
+#def blog(request):
 
-    return render(request,"wpa/blog.html")
+#    return render(request,"wpa/blog.html")
 
-def contact(request):
 
-    return render(request,"wpa/contact.html")
