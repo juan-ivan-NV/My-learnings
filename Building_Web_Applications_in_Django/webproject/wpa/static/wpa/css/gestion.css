@@ -282,3 +282,11 @@ ul.errorlist{
   color: white;
   text-decoration: underline;
 }
+
+.containerForm{
+  background-color: rgb(0 103 185 / 68%);
+  width: 50%;
+  margin: 3% auto;
+  border-radius: .25rem;
+  padding: 0.5% 0px;
+}

@@ -1,0 +1,13 @@
+{% extends "wpa/base.html" %}
+  
+{% load static %}
+
+{% block content %}
+
+    <form action="" method="POST" style="text-align: center;">
+        {% csrf_token %}
+        <div class="containerForm"><table style="color: white; margin:20px auto;">{{myForm.as_table}}</table></div>
+        <input type="submit" value="Send" style="width: 150px;">
+    </form>
+
+{% endblock %}

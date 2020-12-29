@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'wpa',
     'services',
     'blog',
+    'contact',
 ]
 
 MIDDLEWARE = [
