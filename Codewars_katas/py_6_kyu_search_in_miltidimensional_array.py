@@ -1,0 +1,1 @@
+locate = lambda seq,value: True if value in str(seq) else False
