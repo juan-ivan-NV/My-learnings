@@ -5,8 +5,6 @@ Courses:
 1.- CNN for Computer Vision with Keras and TensorFlow in Python
 https://www.udemy.com/course/cnn-for-computer-vision-with-keras-and-tensorflow-in-python/
 
-Certificate
-
 <center>
 <img src='./Computer_vision_keras/UC-88b598ff-5c7d-4e80-acf2-7abb360de52a.jpg' />
 <figcaption>Certificate</figcaption></center>
