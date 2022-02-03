@@ -7,8 +7,6 @@ https://www.udemy.com/course/cnn-for-computer-vision-with-keras-and-tensorflow-i
 
 Certificate
 
-![connections image](https://docs.donkeycar.com/assets/Servo_Wiring.png)
-
 <center>
 <img src='./Computer_vision_keras/UC-88b598ff-5c7d-4e80-acf2-7abb360de52a.jpg' />
 <figcaption>Certificate</figcaption></center>
